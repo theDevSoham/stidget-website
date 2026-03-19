@@ -100,7 +100,7 @@ const Footer: React.FC<FooterProps> = ({
         <div>
           <h4 className="font-semibold text-text-primary mb-4">Product</h4>
           <ul className="space-y-2">
-            {product.map((item: any, idx: number) => (
+            {product.map((item, idx: number) => (
               <li key={idx}>
                 <a
                   href={item.link}
@@ -117,7 +117,7 @@ const Footer: React.FC<FooterProps> = ({
         <div>
           <h4 className="font-semibold text-text-primary mb-4">Company</h4>
           <ul className="space-y-2">
-            {company.map((item: any, idx: number) => (
+            {company.map((item, idx: number) => (
               <li key={idx}>
                 <a
                   href={item.link}
@@ -134,7 +134,7 @@ const Footer: React.FC<FooterProps> = ({
         <div>
           <h4 className="font-semibold text-text-primary mb-4">Support</h4>
           <ul className="space-y-2">
-            {support.map((item: any, idx: number) => (
+            {support.map((item, idx: number) => (
               <li key={idx}>
                 <a
                   href={item.link}
@@ -171,7 +171,7 @@ const Footer: React.FC<FooterProps> = ({
           gap-4 sm:gap-6
         "
         >
-          {extras.map((item: any, idx: number) => (
+          {extras.map((item, idx: number) => (
             <a
               key={idx}
               href={item.link}

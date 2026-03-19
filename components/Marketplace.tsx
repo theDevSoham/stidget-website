@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 
 const actionMap = {
-  log: (param: any) => {
+  log: (param: string) => {
     console.log("Log: ", param);
   },
 };
@@ -48,7 +48,7 @@ const Marketplace: React.FC<MarketplaceProps> = ({ intro, heading, cards }) => {
         </h2>
 
         <div className="flex flex-wrap justify-center md:justify-end gap-3">
-          {heading.buttons.map((btn: any, i: number) => (
+          {heading.buttons.map((btn, i: number) => (
             <button
               key={i}
               onClick={() => {}}
@@ -69,7 +69,7 @@ const Marketplace: React.FC<MarketplaceProps> = ({ intro, heading, cards }) => {
 
       {/* Cards */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-        {cards.map((card: any) => (
+        {cards.map((card) => (
           <div
             key={card.id}
             className="bg-bg-primary rounded-2xl sm:rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-md transition"

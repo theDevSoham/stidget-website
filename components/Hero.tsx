@@ -78,7 +78,7 @@ const Hero:React.FC<HeroProps> = ({
 
           {/* Buttons */}
           <div className="flex flex-col md:flex-row items-center md:items-start gap-3 sm:gap-4">
-            {buttons.map((btn: any, index: number) => (
+            {buttons.map((btn, index: number) => (
               <button
                 key={index}
                 className={`
