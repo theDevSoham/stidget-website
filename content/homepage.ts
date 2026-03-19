@@ -17,7 +17,7 @@ export const homepageContent: {
 } = {
   navbar: {
     brand: "STIDGET",
-    logo: "/images/icon.webp",
+    logo: "/images/Icon.webp",
     avatar: "https://i.pravatar.cc/100",
     links: [
       {
@@ -190,7 +190,7 @@ export const homepageContent: {
   },
   footer: {
     branding: {
-      iconPath: "/images/icon.webp",
+      iconPath: "/images/Icon.webp",
       brandName: "STIDGET",
       subText: "Bridging gap between Tech and Freedom of Expression",
       actions: [
