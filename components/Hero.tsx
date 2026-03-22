@@ -3,6 +3,7 @@ import Image from "next/image";
 import { container } from "@/constants";
 
 export interface HeroProps {
+  sectionId: string;
   badge: {
     label: string;
   };
@@ -27,6 +28,7 @@ export interface HeroProps {
 }
 
 const Hero:React.FC<HeroProps> = ({
+  sectionId,
   badge,
   image,
   title,
@@ -36,7 +38,7 @@ const Hero:React.FC<HeroProps> = ({
   avatarText,
 }) => {
   return (
-    <section className="w-full bg-bg-muted">
+    <section className="w-full bg-bg-muted" id={sectionId}>
       <div
         className={`${container} 
         py-12 sm:py-16 md:py-20 

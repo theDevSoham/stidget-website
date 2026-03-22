@@ -39,6 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({ logo, brand, links, avatar }) => {
               key={item.id}
               href={item.link}
               className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors"
+              scroll={false}
             >
               {item.label}
             </Link>

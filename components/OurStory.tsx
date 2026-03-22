@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 export interface OurStoryProps {
+  sectionId: string;
   image: {
     url: string;
     sub: {
@@ -21,6 +22,7 @@ export interface OurStoryProps {
 }
 
 const OurStory: React.FC<OurStoryProps> = ({
+  sectionId,
   image,
   intro,
   title,
@@ -28,7 +30,7 @@ const OurStory: React.FC<OurStoryProps> = ({
   link,
 }) => {
   return (
-    <section className="w-full bg-bg-muted text-text-primary py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12">
+    <section className="w-full bg-bg-muted text-text-primary py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12" id={sectionId}>
       <div className={`${container} grid md:grid-cols-2 gap-10 md:gap-12 items-center`}>
         {/* 💻 DESKTOP IMAGE (UNCHANGED) */}
         <div className="relative hidden md:block">
