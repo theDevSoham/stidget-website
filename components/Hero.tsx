@@ -38,7 +38,7 @@ const Hero:React.FC<HeroProps> = ({
   avatarText,
 }) => {
   return (
-    <section className="w-full bg-bg-muted" id={sectionId}>
+    <section className="w-full bg-bg-muted scroll-mt-20" id={sectionId}>
       <div
         className={`${container} 
         py-12 sm:py-16 md:py-20 

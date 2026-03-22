@@ -30,7 +30,7 @@ const OurStory: React.FC<OurStoryProps> = ({
   link,
 }) => {
   return (
-    <section className="w-full bg-bg-muted text-text-primary py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12" id={sectionId}>
+    <section className="w-full bg-bg-muted text-text-primary py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 scroll-mt-20" id={sectionId}>
       <div className={`${container} grid md:grid-cols-2 gap-10 md:gap-12 items-center`}>
         {/* 💻 DESKTOP IMAGE (UNCHANGED) */}
         <div className="relative hidden md:block">

@@ -37,9 +37,9 @@ const Navbar: React.FC<NavbarProps> = ({ logo, brand, links, avatar }) => {
           {links.map((item) => (
             <Link
               key={item.id}
-              href={item.link}
+              href={`/${item.link}`}
               className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors"
-              scroll={false}
+              scroll
             >
               {item.label}
             </Link>
@@ -106,6 +106,7 @@ const Navbar: React.FC<NavbarProps> = ({ logo, brand, links, avatar }) => {
               href={item.link}
               className="text-sm font-medium text-text-secondary hover:text-text-primary"
               onClick={() => setIsOpen(false)}
+              scroll
             >
               {item.label}
             </Link>

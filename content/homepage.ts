@@ -44,7 +44,7 @@ export const homepageContent: {
   },
 
   hero: {
-    sectionId: "#home",
+    sectionId: "home",
     badge: {
       label: "PATCH IT NEO PRO",
     },
@@ -79,7 +79,7 @@ export const homepageContent: {
     avatarText: "Trusted by 12k+ early adopters",
   },
   marketing: {
-    sectionId: "#feature",
+    sectionId: "feature",
     heading: "Tech you love to wear all day, every day, everywhere",
     cards: [
       {
@@ -112,7 +112,7 @@ export const homepageContent: {
     ],
   },
   ourStory: {
-    sectionId: "#about",
+    sectionId: "about",
     intro: "Our Story",
     title: "Building Tech That Elevates Human Potential",
     story: `We believe fashion is what you wear - it's how you express who you are. Our journey began with a simple idea : what if your clothing could speak for you? Inspired by the evolving world of technology and self-expression, we created a wearable e-ink display designed to bring your style, thoughts and creativity to life. Our innovative displays allows you to change graphics, messages and designs whenever you desire, turning everyday garments and accessories into dynamic canvases. Starting with a no battery display that lets you update visuals effortlessly and evolving into seamlessly integrated smart displays, our goal is to blend technology and fashion in a way that feels natural, stylish and empowering. Whether you're showcasing your mood, sharing your art or making a bold statement, we're here to help you wear your expression and redefine how the world sees style.`,
@@ -130,7 +130,7 @@ export const homepageContent: {
     },
   },
   marketplace: {
-    sectionId: "#shop",
+    sectionId: "shop",
     intro: "MARKETPLACE",
 
     heading: {

@@ -37,7 +37,7 @@ export interface MarketplaceProps {
 const Marketplace: React.FC<MarketplaceProps> = ({ intro, heading, cards, sectionId }) => {
   return (
     <section
-      className={`w-full px-4 sm:px-6 md:px-12 lg:px-16 py-12 sm:py-16 bg-bg-muted`}
+      className={`w-full px-4 sm:px-6 md:px-12 lg:px-16 py-12 sm:py-16 bg-bg-muted scroll-mt-20`}
       id={sectionId}
     >
       <div className={`${container}`}>
