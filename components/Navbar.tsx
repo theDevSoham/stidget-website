@@ -59,7 +59,7 @@ const Navbar: React.FC<NavbarProps> = ({ logo, brand, links, avatar }) => {
           </div>
 
           {/* Avatar (hidden on small) */}
-          <div className="hidden sm:flex h-10 w-10 rounded-full border-2 border-brand-primary overflow-hidden">
+          {/* <div className="hidden sm:flex h-10 w-10 rounded-full border-2 border-brand-primary overflow-hidden">
             <Image
               src={logo}
               alt="user"
@@ -67,7 +67,7 @@ const Navbar: React.FC<NavbarProps> = ({ logo, brand, links, avatar }) => {
               height={40}
               className="object-cover"
             />
-          </div>
+          </div> */}
 
           {/* Hamburger */}
           <button
@@ -122,9 +122,9 @@ const Navbar: React.FC<NavbarProps> = ({ logo, brand, links, avatar }) => {
                 2
               </span>
             </div>
-            <div className="h-8 w-8 rounded-full overflow-hidden border border-border">
+            {/* <div className="h-8 w-8 rounded-full overflow-hidden border border-border">
               <Image src={avatar} alt="user" width={32} height={32} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

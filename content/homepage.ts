@@ -52,7 +52,7 @@ export const homepageContent: {
     title: "PATCH Your Vibe",
 
     subtitle:
-      "Vibes you can flaunt. Custom patches that let you express your quirks, mood and personality. Patch it. Style it. Own your vibe.",
+      "Vibes you can flaunt.Custom patches that let you express your quirks, mood and personality. Patch it. Style it. Own your vibe.",
 
     image: {
       url: "/images/hero.webp", // replace with your asset
@@ -63,10 +63,6 @@ export const homepageContent: {
       {
         theme: "brand-primary",
         text: "Order Now — $299",
-      },
-      {
-        theme: "secondary",
-        text: "Watch Demo",
       },
     ],
 
@@ -87,27 +83,27 @@ export const homepageContent: {
           name: "battery",
           size: "md",
         },
-        title: "7-Day Battery",
+        title: "Patch with  Ease",
         description:
-          "Proprietary power management system ensures you stay connected for a full week on a single 45-minute charge.",
+          "Patch the gadget with self adhesive Velcro or Magnetic strips.",
       },
       {
         icon: {
           name: "sensor",
           size: "lg",
         },
-        title: "Bio-Sensors",
+        title: "No battery",
         description:
-          "Clinical-grade bio-tracking for heart rate, blood oxygen, and sleep stages. Real-time alerts for irregularities.",
+          "Forget about recharging and battery problems. This Tech uses no Battery solution",
       },
       {
         icon: {
           name: "droplet",
           size: "lg",
         },
-        title: "5ATM Waterproof",
+        title: "Trendy and Techie",
         description:
-          "Precision-sealed titanium chassis allows for diving up to 50m. Perfect for swimming and open-water sports.",
+          "Seamless design and asthetics make this product trendy. With latest software, utlization of the device is effortless",
       },
     ],
   },
@@ -115,7 +111,9 @@ export const homepageContent: {
     sectionId: "about",
     intro: "Our Story",
     title: "Building Tech That Elevates Human Potential",
-    story: `We believe fashion is what you wear - it's how you express who you are. Our journey began with a simple idea : what if your clothing could speak for you? Inspired by the evolving world of technology and self-expression, we created a wearable e-ink display designed to bring your style, thoughts and creativity to life. Our innovative displays allows you to change graphics, messages and designs whenever you desire, turning everyday garments and accessories into dynamic canvases. Starting with a no battery display that lets you update visuals effortlessly and evolving into seamlessly integrated smart displays, our goal is to blend technology and fashion in a way that feels natural, stylish and empowering. Whether you're showcasing your mood, sharing your art or making a bold statement, we're here to help you wear your expression and redefine how the world sees style.`,
+    story: `<p>We believe fashion is what you wear - it's how you express who you are. Our journey began with a simple idea : what if your clothing could speak for you? Inspired by the evolving world of technology and self-expression, we created a wearable e-ink display designed to bring your style, thoughts and creativity to life. Our innovative displays allows you to change graphics, messages and designs whenever you desire, turning everyday garments and accessories into dynamic canvases. Starting with a no battery display that lets you update visuals effortlessly and evolving into seamlessly integrated smart displays, our goal is to blend technology and fashion in a way that feels natural, stylish and empowering. Whether you're showcasing your mood, sharing your art or making a bold statement, we're here to help you wear your expression and redefine how the world sees style.</p>
+    <p> Starting with a no battery display that lets you update visuals effortlessly and evolving into seamlessly integrated smart displays, our goal is to blend technology and fashion in a way that feels natural, stylish and empowering. Whether you’re showcasing your mood, sharing your art or making a bold statement, we’re here to help you wear your expression and redefine how the world sees style. </p>
+    `,
     image: {
       url: "/images/story.webp",
       sub: {
@@ -124,10 +122,10 @@ export const homepageContent: {
       },
     },
 
-    link: {
-      url: "/about",
-      label: "Read the full vision",
-    },
+    // link: {
+    //   url: "/about",
+    //   label: "Read the full vision",
+    // },
   },
   marketplace: {
     sectionId: "shop",
@@ -157,9 +155,9 @@ export const homepageContent: {
           theme: "ghost",
         },
         image: "/images/product1.webp",
-        productTitle: "Midnight Black",
-        productSubTitle: "Space Grade Aluminum",
-        price: "$299",
+        productTitle: "Patch IT LITE",
+        productSubTitle: "1.54”Display",
+        price: "INR 899",
       },
       {
         id: "2",
@@ -168,9 +166,9 @@ export const homepageContent: {
           theme: "ghost",
         },
         image: "/images/product2.webp",
-        productTitle: "Arctic White",
-        productSubTitle: "Brushed Titanium",
-        price: "$349",
+        productTitle: "Patch IT PRO",
+        productSubTitle: "2.13” Display",
+        price: "INR 999",
       },
       {
         id: "3",
@@ -179,9 +177,9 @@ export const homepageContent: {
           theme: "primary",
         },
         image: "/images/product3.webp",
-        productTitle: "Teal Edition",
-        productSubTitle: "Signature Ceramic",
-        price: "$399",
+        productTitle: "Patch IT PRO Manga",
+        productSubTitle: "Manga skin",
+        price: "INR 1299",
       },
     ],
   },
@@ -215,26 +213,26 @@ export const homepageContent: {
       ],
     },
 
-    product: [
-      { label: "Compare Series", link: "/" },
-      { label: "Accessories", link: "/" },
-      { label: "Health App", link: "/" },
-      { label: "For Enterprise", link: "/" },
-    ],
+    // product: [
+    //   { label: "Compare Series", link: "/" },
+    //   { label: "Accessories", link: "/" },
+    //   { label: "Health App", link: "/" },
+    //   { label: "For Enterprise", link: "/" },
+    // ],
 
-    company: [
-      { label: "About Us", link: "/about" },
-      { label: "Our Process", link: "/" },
-      { label: "Sustainability", link: "/" },
-      { label: "Careers", link: "/" },
-    ],
+    // company: [
+    //   { label: "About Us", link: "/about" },
+    //   { label: "Our Process", link: "/" },
+    //   { label: "Sustainability", link: "/" },
+    //   { label: "Careers", link: "/" },
+    // ],
 
-    support: [
-      { label: "Help Center", link: "/" },
-      { label: "Order Status", link: "/" },
-      { label: "Warranty", link: "/" },
-      { label: "Contact Us", link: "/" },
-    ],
+    // support: [
+    //   { label: "Help Center", link: "/" },
+    //   { label: "Order Status", link: "/" },
+    //   { label: "Warranty", link: "/" },
+    //   { label: "Contact Us", link: "/" },
+    // ],
 
     copyright: "© 2024 WEARABLETECH INC. ALL RIGHTS RESERVED.",
 

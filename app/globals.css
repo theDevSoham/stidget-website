@@ -23,7 +23,8 @@ body {
   --color-border: #e2e8f0;
 
   /* Brand */
-  --color-brand-primary: #5332ff;
+  --color-brand-primary: #161083;
+  --color-brand-primary-light: #5332ff;
   --color-brand-accent: #f931b0;
 
   /* Dark UI surfaces (buttons/cards contrast) */
@@ -31,8 +32,8 @@ body {
   --color-surface-elevated: #161083;
 
   /* Opacity variants from design */
-  --color-white-02: rgba(255, 255, 255, 0.02);
-  --color-white-50: rgba(226, 232, 240, 0.5);
+  --color-bg-primary-02: rgba(255, 255, 255, 0.02);
+  --color-bg-primary-50: rgba(226, 232, 240, 0.5);
   --color-accent-20: rgba(249, 49, 176, 0.2);
   --color-accent-10: rgba(249, 49, 176, 0.1);
 }
@@ -55,6 +56,7 @@ body {
   --color-border: var(--color-border);
 
   --color-brand-primary: var(--color-brand-primary);
+  --color-brand-primary-light: var(--color-brand-primary-light);
   --color-brand-accent: var(--color-brand-accent);
 
   --color-surface-dark: var(--color-surface-dark);

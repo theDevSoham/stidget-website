@@ -17,15 +17,15 @@ export interface FooterProps {
       action: string;
     }>;
   };
-  product: Array<{
+  product?: Array<{
     label: string;
     link: string;
   }>;
-  company: Array<{
+  company?: Array<{
     label: string;
     link: string;
   }>;
-  support: Array<{
+  support?: Array<{
     label: string;
     link: string;
   }>;
@@ -97,55 +97,61 @@ const Footer: React.FC<FooterProps> = ({
         </div>
 
         {/* Product */}
-        <div>
-          <h4 className="font-semibold text-text-primary mb-4">Product</h4>
-          <ul className="space-y-2">
-            {product.map((item, idx: number) => (
-              <li key={idx}>
-                <a
-                  href={item.link}
-                  className="hover:text-text-primary transition"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+        {product && product.length > 0 && (
+          <div>
+            <h4 className="font-semibold text-text-primary mb-4">Product</h4>
+            <ul className="space-y-2">
+              {product.map((item, idx: number) => (
+                <li key={idx}>
+                  <a
+                    href={item.link}
+                    className="hover:text-text-primary transition"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {/* Company */}
-        <div>
-          <h4 className="font-semibold text-text-primary mb-4">Company</h4>
-          <ul className="space-y-2">
-            {company.map((item, idx: number) => (
-              <li key={idx}>
-                <a
-                  href={item.link}
-                  className="hover:text-text-primary transition"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+        {company && company.length > 0 && (
+          <div>
+            <h4 className="font-semibold text-text-primary mb-4">Company</h4>
+            <ul className="space-y-2">
+              {company.map((item, idx: number) => (
+                <li key={idx}>
+                  <a
+                    href={item.link}
+                    className="hover:text-text-primary transition"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {/* Support */}
-        <div>
-          <h4 className="font-semibold text-text-primary mb-4">Support</h4>
-          <ul className="space-y-2">
-            {support.map((item, idx: number) => (
-              <li key={idx}>
-                <a
-                  href={item.link}
-                  className="hover:text-text-primary transition"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+        {support && support.length > 0 && (
+          <div>
+            <h4 className="font-semibold text-text-primary mb-4">Support</h4>
+            <ul className="space-y-2">
+              {support.map((item, idx: number) => (
+                <li key={idx}>
+                  <a
+                    href={item.link}
+                    className="hover:text-text-primary transition"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
 
       {/* BOTTOM BAR */}

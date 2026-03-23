@@ -3,6 +3,7 @@
 import { container } from "@/constants";
 import Image from "next/image";
 import React from "react";
+import Icons from "./ui/Icons";
 
 const actionMap = {
   log: (param: string) => {
@@ -34,7 +35,12 @@ export interface MarketplaceProps {
   }>;
 }
 
-const Marketplace: React.FC<MarketplaceProps> = ({ intro, heading, cards, sectionId }) => {
+const Marketplace: React.FC<MarketplaceProps> = ({
+  intro,
+  heading,
+  cards,
+  sectionId,
+}) => {
   return (
     <section
       className={`w-full px-4 sm:px-6 md:px-12 lg:px-16 py-12 sm:py-16 bg-bg-muted scroll-mt-20`}
@@ -61,7 +67,7 @@ const Marketplace: React.FC<MarketplaceProps> = ({ intro, heading, cards, sectio
                 px-5 py-2 rounded-full text-sm font-medium transition
                 ${
                   btn.theme === "primary"
-                    ? "bg-brand-accent text-white hover:opacity-90"
+                    ? "bg-brand-accent text-bg-primary hover:opacity-90"
                     : "bg-bg-primary border border-border text-text-secondary hover:bg-bg-muted"
                 }
               `}
@@ -89,8 +95,8 @@ const Marketplace: React.FC<MarketplaceProps> = ({ intro, heading, cards, sectio
                     px-3 py-1 text-xs rounded-md font-semibold
                     ${
                       card.tag.theme === "primary"
-                        ? "bg-brand-accent text-white"
-                        : "bg-surface-dark text-white"
+                        ? "bg-brand-accent text-bg-primary"
+                        : "bg-surface-dark text-bg-primary"
                     }
                   `}
                   >
@@ -135,7 +141,7 @@ const Marketplace: React.FC<MarketplaceProps> = ({ intro, heading, cards, sectio
                   className="
                 w-full 
                 bg-surface-dark 
-                text-white 
+                text-bg-primary
                 py-2.5 sm:py-3 
                 rounded-xl 
                 flex items-center justify-center gap-2 
@@ -143,7 +149,10 @@ const Marketplace: React.FC<MarketplaceProps> = ({ intro, heading, cards, sectio
                 transition
               "
                 >
-                  🛒 Add to Cart
+                  <span>
+                    <Icons icon="shoppingBag" size="sm" />
+                  </span>
+                  <span>Add to Cart</span>
                 </button>
               </div>
             </div>

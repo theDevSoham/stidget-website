@@ -15,7 +15,7 @@ export interface OurStoryProps {
   intro: string;
   title: string;
   story: string;
-  link: {
+  link?: {
     url: string;
     label: string;
   };
@@ -30,8 +30,13 @@ const OurStory: React.FC<OurStoryProps> = ({
   link,
 }) => {
   return (
-    <section className="w-full bg-bg-muted text-text-primary py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 scroll-mt-20" id={sectionId}>
-      <div className={`${container} grid md:grid-cols-2 gap-10 md:gap-12 items-center`}>
+    <section
+      className="w-full bg-bg-muted text-text-primary py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 scroll-mt-20"
+      id={sectionId}
+    >
+      <div
+        className={`${container} grid md:grid-cols-2 gap-10 md:gap-12 items-center`}
+      >
         {/* 💻 DESKTOP IMAGE (UNCHANGED) */}
         <div className="relative hidden md:block">
           {/* Glow */}
@@ -94,22 +99,27 @@ const OurStory: React.FC<OurStoryProps> = ({
           </div>
 
           {/* Title */}
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
             {title}
           </h2>
 
           {/* Story */}
-          <p className="text-sm sm:text-base text-text-secondary leading-relaxed whitespace-pre-line">
-            {story}
-          </p>
+          <p
+            className="text-sm sm:text-base text-text-secondary leading-relaxed whitespace-pre-line"
+            dangerouslySetInnerHTML={{
+              __html: story,
+            }}
+          />
 
           {/* Link */}
-          <Link
-            href={link.url}
-            className="text-brand-accent font-semibold inline-flex items-center justify-center md:justify-start gap-2 hover:gap-3 transition-all"
-          >
-            {link.label} →
-          </Link>
+          {link && (
+            <Link
+              href={link.url}
+              className="text-brand-accent font-semibold inline-flex items-center justify-center md:justify-start gap-2 hover:gap-3 transition-all"
+            >
+              {link.label} →
+            </Link>
+          )}
         </div>
       </div>
     </section>

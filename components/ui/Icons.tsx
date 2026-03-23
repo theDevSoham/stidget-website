@@ -4,6 +4,7 @@ import droplet from "@/public/images/icons/droplet.svg";
 import sensor from "@/public/images/icons/sensor.svg";
 import shutter from "@/public/images/icons/shutter.svg";
 import share from "@/public/images/icons/share.svg";
+import shoppingBag from "@/public/images/icons/shopping_bag.svg";
 import Image from "next/image";
 
 export const IconSet = {
@@ -12,6 +13,7 @@ export const IconSet = {
   sensor,
   share,
   shutter,
+  shoppingBag,
 };
 
 const sizeMap = {

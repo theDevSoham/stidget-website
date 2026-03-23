@@ -21,7 +21,7 @@ const Marketing: React.FC<MarketingProps> = ({ heading, cards, sectionId }) => {
     <section className={`${container} py-20 px-6 bg-bg-primary scroll-mt-20`} id={sectionId}>
       <div className="text-center">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-brand-primary mb-14 uppercase tracking-wide">
+        <h2 className="text-3xl md:text-4xl font-bold text-brand-primary-light mb-14 uppercase tracking-wide">
           {heading}
         </h2>
 

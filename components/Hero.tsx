@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { container } from "@/constants";
+import { plusJakartaSans } from "@/public/fonts/font";
 
 export interface HeroProps {
   sectionId: string;
@@ -49,7 +50,7 @@ const Hero:React.FC<HeroProps> = ({
         {/* LEFT */}
         <div className="flex flex-col gap-5 sm:gap-6 text-center md:text-left">
           {/* Badge */}
-          <div className="inline-flex items-center justify-center md:justify-start gap-2 px-4 py-1 rounded-full bg-brand-primary text-bg-primary text-xs font-medium w-fit mx-auto md:mx-0">
+          <div className="inline-flex items-center justify-center md:justify-start gap-2 px-4 py-1 rounded-full bg-bg-primary text-brand-primary text-xs font-medium w-fit mx-auto md:mx-0 border border-brand-accent/30">
             ✨ {badge.label}
           </div>
 
@@ -59,7 +60,7 @@ const Hero:React.FC<HeroProps> = ({
           </h1>
 
           {/* Subtitle */}
-          <p className="text-sm sm:text-base text-text-secondary max-w-md mx-auto md:mx-0 leading-relaxed">
+          <p className={`${plusJakartaSans.className} font-semibold text-sm sm:text-xl text-text-secondary max-w-md mx-auto md:mx-0 leading-relaxed`}>
             {subtitle}
           </p>
 
@@ -108,7 +109,7 @@ const Hero:React.FC<HeroProps> = ({
                   alt="avatar"
                   width={32}
                   height={32}
-                  className="rounded-full border-2 border-white"
+                  className="rounded-full border-2 border-bg-primary"
                 />
               ))}
             </div>
